@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minhea — joyas y prendas artesanales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <div class="logo">MINHEA</div>
+    <nav>
+      <a href="#tienda">Tienda</a>
+      <a href="#amedida">A medida</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="section hero" id="hero">
+    <div class="container grid-2">
+      <div>
+        <h1 style="font-family:'Playfair Display',serif">Joyas y prendas hechas a mano para durar toda la vida.</h1>
+        <p>Ediciones limitadas, materiales nobles y diseño honesto.</p>
+        <a class="btn" href="#tienda">COMPRAR JOYAS</a>
+        <a class="btn ghost" href="#lookbook" style="margin-left:8px">VER COLECCIONES</a>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1615220368124-6c1a5d3e6c63?q=80&w=1200&auto=format&fit=crop" alt="Modelo con joyas Minhea">
+      </figure>
+    </div>
+  </section>
+
+  <!-- DESTACADOS -->
+  <section class="section" id="tienda">
+    <div class="container">
+      <h2>Destacados</h2>
+      <div class="grid-4">
+        <a class="card" href="#"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" alt=""><h3>Alia Necklace</h3><p>€139</p></a>
+        <a class="card" href="#"><img src="https://images.unsplash.com/photo-1520975661595-6453be3f7070?q=80&w=800&auto=format&fit=crop" alt=""><h3>Raquel Top</h3><p>€85</p></a>
+        <a class="card" href="#"><img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=800&auto=format&fit=crop" alt=""><h3>Iris Ring</h3><p>Edición limitada</p></a>
+        <a class="card" href="#"><img src="https://images.unsplash.com/photo-1520975774831-6da541f1a98d?q=80&w=800&auto=format&fit=crop" alt=""><h3>Berta Earrings</h3><p>€110</p></a>
+      </div>
+
+      <ul class="benefits">
+        <li>Oro reciclado o plata 925</li>
+        <li>Tejidos naturales</li>
+        <li>Piezas hechas a mano</li>
+        <li>Ediciones cortas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- A MEDIDA -->
+  <section class="section alt" id="amedida">
+    <div class="container grid-2">
+      <div>
+        <h2>Encarga tu joya</h2>
+        <ol class="bullets">
+          <li><strong>Idea:</strong> nos cuentas tu inspiración.</li>
+          <li><strong>Boceto:</strong> te enviamos propuesta.</li>
+          <li><strong>Pieza:</strong> fabricamos en nuestro taller.</li>
+        </ol>
+        <a class="btn ghost" href="#contacto">EMPIEZA TU ENCARGO</a>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1599643474175-eee68a3e5a3b?q=80&w=1200&auto=format&fit=crop" alt="Boceto de anillo">
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section" id="proceso">
+    <div class="container grid-2">
+      <div>
+        <h2>Hecho para perdurar</h2>
+        <p>Acabados resistentes, metales nobles y confección consciente.</p>
+        <ul class="bullets">
+          <li>Proveedores locales</li>
+          <li>Packaging reciclado</li>
+          <li>Garantía de 2 años</li>
+        </ul>
+        <a class="btn" href="empresa.html#proceso-detalle">SABER MÁS</a>
+      </div>
+      <figure class="figure-no-crop">
+        <img src="https://images.unsplash.com/photo-1617038260897-3f1b31f7b9cd?q=80&w=1200&auto=format&fit=crop" alt="Herramientas de joyería">
+      </figure>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="section alt" id="lookbook">
+    <div class="container">
+      <h2>Lookbook</h2>
+      <div class="grid-4">
+        <img src="https://images.unsplash.com/photo-1551292831-023188e78222?q=80&w=800&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1544033527-b192daee1f31?q=80&w=800&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1520974779630-5c0f4a507d7d?q=80&w=800&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1520975660656-1cb7d8d5b0d7?q=80&w=800&auto=format&fit=crop" alt="">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contacto">
+  <div class="container grid-3">
+    <div>
+      <div class="logo">MINHEA</div>
+      <p>Hecho a mano en España.</p>
+    </div>
+    <div>
+      <h3>Enlaces</h3>
+      <p><a href="empresa.html">Sobre Minhea</a></p>
+      <p><a href="personas.html">Trabaja con nosotros</a></p>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <p><a href="mailto:hola@minhea.com">hola@minhea.com</a></p>
+      <p><a href="#">Envíos y devoluciones</a></p>
+      <p><a href="#">Guía de cuidados</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
