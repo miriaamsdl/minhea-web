@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MINHEA — Hecho para perdurar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- HEADER (fijo) -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="minhea.html">MINHEA</a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <div class="dropdown" id="shopDropdown">
+          <button class="drop-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            Tienda ▾
+          </button>
+          <div class="drop-menu" role="menu" aria-label="Submenú Tienda">
+            <a href="joyas.html" role="menuitem">Joyas</a>
+            <a href="ropa.html" role="menuitem">Ropa</a>
+          </div>
+        </div>
+
+        <a href="encargos.html">Encargos</a>
+
+        <!-- Carrito: ahora es LINK a la página carrito.html -->
+        <a class="cart-btn" href="carrito.html" aria-label="Carrito" title="Carrito">
+          🛒 <span class="cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Joyas y prendas hechas a mano para durar toda la vida.</h1>
+          <p class="lead">Oro reciclado, plata y tejidos naturales. Piezas únicas, hechas en España.</p>
+          <div class="hero-actions">
+            <a class="btn ghost" href="encargos.html">Encargos a medida</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="img/design.jpg" alt="Diseño de anillo">
+        </div>
+      </div>
+    </section>
+
+    <!-- JOYAS DESTACADAS -->
+    <section class="section" id="joyas">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="title">Joyas destacadas</h2>
+          <a class="btn ghost small" href="joyas.html">Ver todas las joyas</a>
+        </div>
+
+        <div class="grid-4 products">
+          <article class="card product"
+              data-id="alia"
+              data-name="Collar Alia"
+              data-price="21"
+              data-img="img/collar1.jpeg">
+            <img src="img/collar1.jpeg" alt="Collar Alia">
+            <h3>Collar Alia</h3>
+            <p class="price">21€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+
+          <article class="card product"
+              data-id="iris"
+              data-name="Collar Iris"
+              data-price="23"
+              data-img="img/collar3.jpeg">
+            <img src="img/collar3.jpeg" alt="Collar Iris">
+            <h3>Collar Iris</h3>
+            <p class="price">23€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+
+          <article class="card product"
+              data-id="berta"
+              data-name="Pendientes Berta"
+              data-price="16"
+              data-img="img/pendientes1.jpeg">
+            <img src="img/pendientes1.jpeg" alt="Pendientes Berta">
+            <h3>Pendientes Berta</h3>
+            <p class="price">16€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+
+          <article class="card product"
+              data-id="valeria"
+              data-name="Pulsera Valeria"
+              data-price="17"
+              data-img="img/pulsera1.jpg">
+            <img src="img/pulsera1.jpg" alt="Pulsera Valeria">
+            <h3>Pulsera Valeria</h3>
+            <p class="price">17€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROPA DESTACADA -->
+    <section class="section alt" id="ropa">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="title">Ropa destacada</h2>
+          <a class="btn ghost small" href="ropa.html">Ver toda la ropa</a>
+        </div>
+
+        <div class="grid-4 products">
+          <article class="card product"
+              data-id="alejandra"
+              data-name="Top Alejandra"
+              data-price="25"
+              data-img="img/top1.jpeg">
+            <img src="img/top1.jpeg" alt="Top Alejandra">
+            <h3>Top Alejandra</h3>
+            <p class="price">25€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+
+          <article class="card product"
+              data-id="natalia"
+              data-name="Camiseta Natalia"
+              data-price="25"
+              data-img="img/camiseta1.jpeg">
+            <img src="img/camiseta1.jpeg" alt="Camiseta Natalia">
+            <h3>Camiseta Natalia</h3>
+            <p class="price">25€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+
+          <article class="card product"
+              data-id="marcos"
+              data-name="Top Marcos"
+              data-price="20"
+              data-img="img/top2.jpeg">
+            <img src="img/top2.jpeg" alt="Top Marcos">
+            <h3>Top Marcos</h3>
+            <p class="price">20€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+
+          <article class="card product"
+              data-id="miriam"
+              data-name="Camiseta Miriam"
+              data-price="25"
+              data-img="img/camiseta2.jpeg">
+            <img src="img/camiseta2.jpeg" alt="Camiseta Miriam">
+            <h3>Camiseta Miriam</h3>
+            <p class="price">25€</p>
+            <button class="btn add" type="button">Añadir al carrito</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOOKBOOK -->
+<section class="section" id="lookbook">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="title">Lookbook</h2>
+    </div>
+
+    <div class="lookbook">
+      <div class="lookbook-item">
+        <img src="img/look1.jpg" alt="">
+        <div class="lookbook-caption">Chaos</div>
+      </div>
+
+      <div class="lookbook-item">
+        <img src="img/look2.jpeg" alt="">
+        <div class="lookbook-caption">Atelier</div>
+      </div>
+
+      <div class="lookbook-item">
+        <img src="img/look3.jpg" alt="">
+        <div class="lookbook-caption">Wild Bratz</div>
+      </div>
+
+      <div class="lookbook-item">
+        <img src="img/look4.jpg" alt="">
+        <div class="lookbook-caption">Silver Witch</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <!-- Columna 1: Empresa "real" -->
+    <div>
+      <h4>Minhea</h4>
+      <ul>
+        <li><a href="sobre.html">Sobre Minhea</a></li>
+        <li><a href="proceso.html">Proceso de creación</a></li>
+        <li><a href="trabaja.html">Trabaja con nosotros</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 2: Plan de desarrollo de personas (todo el trabajo) -->
+    <div>
+      <h4>Plan de desarrollo de personas</h4>
+      <ul>
+        <li><a href="estructura.html">Estructura organizativa</a></li>
+        <li><a href="talento.html">Atracción del talento</a></li>
+        <li><a href="cultura-clima.html">Cultura y clima</a></li>
+        <li><a href="comunicacion.html">Comunicación interna</a></li>
+        <li><a href="formacion-desarrollo.html">Formación y desarrollo</a></li>
+        <li><a href="salud-bienestar.html">Salud y bienestar</a></li>
+        <li><a href="cuadro-mando.html">Cuadro de mando</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Documentos del trabajo -->
+    <div>
+      <h4>Documentación</h4>
+      <ul>
+        <li><a href="anexos.html">Anexos</a></li>
+        <li><a href="cuestionarios.html">Cuestionarios y escalas</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Legal (para que siga pareciendo web real) -->
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a>Términos y condiciones</a></li>
+        <li><a>Política de privacidad</a></li>
+        <li><a>Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2025 MINHEA · Proyecto de Psicología del Trabajo y las Organizaciones</p>
+  </div>
+</footer>
+
+  <!-- PANEL DE CONFIRMACIÓN -->
+  <div class="add-panel-backdrop" hidden></div>
+  <aside class="add-panel" aria-hidden="true">
+    <div class="add-panel-head">
+      <span class="ok">✓</span> 1 artículo ha sido añadido a tu cesta
+      <button class="add-panel-close" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="add-panel-body">
+      <img class="ap-img" src="" alt="">
+      <div class="ap-info">
+        <div class="ap-name">Producto</div>
+        <div class="ap-price">€0,00</div>
+      </div>
+    </div>
+    <div class="add-panel-actions">
+      <a class="btn ap-view" href="carrito.html">Ver la cesta</a>
+      <button class="btn ap-keep" type="button">Seguir comprando</button>
+    </div>
+  </aside>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+  <script>
+    // Dropdown tienda
+    (function(){
+      const dd = document.getElementById('shopDropdown'); if(!dd) return;
+      const trigger = dd.querySelector('.drop-trigger'); const menu = dd.querySelector('.drop-menu');
+      const open = (v)=>{ menu.dataset.open = v ? '1' : '0'; trigger.setAttribute('aria-expanded', v?'true':'false'); };
+      trigger.addEventListener('click', e=>{ e.stopPropagation(); open(menu.dataset.open!=='1'); });
+      document.addEventListener('click', ()=>open(false));
+    })();
+
+    // ----- Panel de añadido (visual, no toca app.js) -----
+    let addPanelTimer=null;
+    function showAddPanel(item){
+      const panel = document.querySelector('.add-panel');
+      const back  = document.querySelector('.add-panel-backdrop');
+      if(!panel||!back) return;
+      panel.querySelector('.ap-img').src   = item.img || '';
+      panel.querySelector('.ap-img').alt   = item.name || 'Producto';
+      panel.querySelector('.ap-name').textContent  = item.name || 'Producto';
+      panel.querySelector('.ap-price').textContent = new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(item.price||0);
+      panel.dataset.show='1'; back.dataset.show='1'; back.hidden=false;
+      const close=()=>{ panel.dataset.show='0'; back.dataset.show='0'; clearTimeout(addPanelTimer); setTimeout(()=>{ back.hidden=true; },280); };
+      document.querySelector('.add-panel-close').onclick=close;
+      document.querySelector('.add-panel-backdrop').onclick=close;
+      document.querySelector('.add-panel .ap-keep').onclick=close;
+      clearTimeout(addPanelTimer); addPanelTimer=setTimeout(close,4000);
+    }
+
+    // Al clicar "Añadir al carrito", mostramos el panel con los datos de la tarjeta
+    document.addEventListener('click', (e)=>{
+      const btn=e.target.closest('.add'); if(!btn) return;
+      const card=btn.closest('.product'); if(!card) return;
+      const price=Number((card.dataset.price||'').toString().replace(/[^\d.,]/g,'').replace(',','.'));
+      const item={ name:card.dataset.name||'Producto', img:card.dataset.img||'', price:isNaN(price)?0:price };
+      // app.js ya añade al carrito y actualiza el contador. Aquí solo mostramos el panel.
+      showAddPanel(item);
+    });
+  </script>
+</body>
+</html>
+

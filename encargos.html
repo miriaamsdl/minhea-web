@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MINHEA — Hecho para perdurar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- HEADER (fijo) -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="minhea.html">MINHEA</a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <div class="dropdown" id="shopDropdown">
+          <button class="drop-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            Tienda ▾
+          </button>
+          <div class="drop-menu" role="menu" aria-label="Submenú Tienda">
+            <a href="joyas.html" role="menuitem">Joyas</a>
+            <a href="ropa.html" role="menuitem">Ropa</a>
+          </div>
+        </div>
+
+        <a href="encargos.html">Encargos</a>
+
+        <!-- Carrito: ahora es LINK a la página carrito.html -->
+        <a class="cart-btn" href="carrito.html" aria-label="Carrito" title="Carrito">
+          🛒 <span class="cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO ENCARGOS -->
+    <section class="section encargos-hero">
+      <div class="container encargos-hero-grid">
+        <div>
+          <h1 class="title">Encargos a medida</h1>
+          <p class="lead">
+            Diseñamos contigo piezas únicas de joyería y prendas artesanales.
+            Tú traes la idea, nosotras la convertimos en algo que puedas llevar toda la vida.
+          </p>
+          <p class="encargos-note">
+            Respuesta estimada en 24–48h laborables. Sin compromiso.
+          </p>
+        </div>
+        <div class="encargos-hero-card">
+          <p class="encargos-pill">Hecho a mano en España</p>
+          <p>Trabajamos con oro reciclado, plata, acero inoxidable y tejidos de calidad.
+             Cada encargo se diseña de forma individual: no hay dos piezas iguales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRES PASOS -->
+    <section class="section encargos-steps">
+      <div class="container">
+        <h2 class="title">Cómo funciona</h2>
+        <div class="grid-3 encargos-steps-grid">
+          <article class="card step-card">
+            <span class="step-badge">1</span>
+            <h3>Cuéntanos tu idea</h3>
+            <p>Explícanos qué tienes en mente: tipo de pieza, estilo, colores, ocasión especial, referencias… cuanto más detalle, mejor.</p>
+          </article>
+
+          <article class="card step-card">
+            <span class="step-badge">2</span>
+            <h3>Propuesta y presupuesto</h3>
+            <p>Te enviamos una propuesta con boceto orientativo, opciones de materiales y un rango de precio aproximado para que puedas decidir.</p>
+          </article>
+
+          <article class="card step-card">
+            <span class="step-badge">3</span>
+            <h3>Creación y envío</h3>
+            <p>Una vez aceptado el diseño, producimos la pieza a mano en nuestro taller y te la enviamos lista para estrenar o regalar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO MONO -->
+    <section class="section">
+      <div class="container encargos-form-grid">
+        <div>
+          <h2 class="title">¿Qué quieres crear?</h2>
+          <p class="lead">
+            No hace falta que lo tengas todo claro: puedes contarnos solo la idea general
+            y juntos le damos forma.
+          </p>
+
+          <img class="encargos-img"
+            src="img/encargos.jpg"
+            alt="Inspiración encargos Minhea">
+
+        </div>
+
+        <form class="encargos-form" action="#" method="post">
+          <div class="field-group">
+            <label for="tipo">Tipo de encargo *</label>
+            <select id="tipo" name="tipo">
+              <option value="">Selecciona una opción</option>
+              <option value="joya">Joya a medida</option>
+              <option value="ropa">Prenda a medida</option>
+              <option value="conjunto">Conjunto joya + prenda</option>
+              <option value="otro">Otro (cuéntanos)</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="nombre">Nombre *</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre">
+            </div>
+            <div class="field-group">
+              <label for="email">Correo electrónico *</label>
+              <input id="email" name="email" type="email" placeholder="nombre@ejemplo.com">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="presupuesto">Presupuesto aproximado *</label>
+              <select id="presupuesto" name="presupuesto">
+                <option value="">Prefiero no decir / ver opciones</option>
+                <option value="-50">Hasta 50€</option>
+                <option value="50-100">50–100€</option>
+                <option value="100-200">100–200€</option>
+                <option value="+200">Más de 200€</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="fecha">¿Para cuándo lo necesitas? *</label>
+              <input id="fecha" name="fecha" type="text" placeholder="Ej. antes del 20 de diciembre">
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="descripcion">Descripción del encargo *</label>
+            <textarea id="descripcion" name="descripcion" rows="5"
+              placeholder="Cuéntanos el estilo, colores, materiales, si es para regalo, si quieres iniciales, piedras, etc."></textarea>
+          </div>
+
+          <div class="field-group">
+            <label for="referencias">Referencias (opcional)</label>
+            <input id="referencias" name="referencias" type="text"
+              placeholder="Enlaces a Pinterest, Instagram o inspo que te guste">
+            <p class="helper-text small">También puedes adjuntar fotos cuando te respondamos por email.</p>
+          </div>
+
+          <button class="btn" type="submit">Enviar solicitud de encargo</button>
+          <p class="helper-text small"> Al enviar este formulario aceptas nuestra <a href="#">Política de privacidad</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- MINI FAQ -->
+    <section class="section alt">
+      <div class="container encargos-faq">
+        <h2 class="title">Preguntas frecuentes</h2>
+        <div class="faq-grid">
+          <article>
+            <h3>¿Cuánto tarda un encargo?</h3>
+            <p>Depende del tipo de pieza, pero solemos tardar entre 2 y 4 semanas desde que se confirma el diseño final.</p>
+          </article>
+          <article>
+            <h3>¿Hay importe mínimo?</h3>
+            <p>Para encargos a medida solemos trabajar a partir de 30€, aunque puedes escribirnos y vemos tu caso concreto.</p>
+          </article>
+          <article>
+            <h3>¿Puedo personalizar una pieza de la tienda?</h3>
+            <p>Sí. Puedes indicarnos el nombre del producto y qué cambios te gustaría hacer (longitud, color, material, cierre…).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <!-- Columna 1: Empresa "real" -->
+    <div>
+      <h4>Minhea</h4>
+      <ul>
+        <li><a href="sobre.html">Sobre Minhea</a></li>
+        <li><a href="proceso.html">Proceso de creación</a></li>
+        <li><a href="trabaja.html">Trabaja con nosotros</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 2: Plan de desarrollo de personas (todo el trabajo) -->
+    <div>
+      <h4>Plan de desarrollo de personas</h4>
+      <ul>
+        <li><a href="estructura.html">Estructura organizativa</a></li>
+        <li><a href="talento.html">Atracción del talento</a></li>
+        <li><a href="cultura-clima.html">Cultura y clima</a></li>
+        <li><a href="comunicacion.html">Comunicación interna</a></li>
+        <li><a href="formacion-desarrollo.html">Formación y desarrollo</a></li>
+        <li><a href="salud-bienestar.html">Salud y bienestar</a></li>
+        <li><a href="cuadro-mando.html">Cuadro de mando</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Documentos del trabajo -->
+    <div>
+      <h4>Documentación</h4>
+      <ul>
+        <li><a href="anexos.html">Anexos</a></li>
+        <li><a href="cuestionarios.html">Cuestionarios y escalas</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Legal (para que siga pareciendo web real) -->
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a>Términos y condiciones</a></li>
+        <li><a>Política de privacidad</a></li>
+        <li><a>Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2025 MINHEA · Proyecto de Psicología del Trabajo y las Organizaciones</p>
+  </div>
+</footer>
+
+  <!-- PANEL DE CONFIRMACIÓN -->
+  <div class="add-panel-backdrop" hidden></div>
+  <aside class="add-panel" aria-hidden="true">
+    <div class="add-panel-head">
+      <span class="ok">✓</span> 1 artículo ha sido añadido a tu cesta
+      <button class="add-panel-close" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="add-panel-body">
+      <img class="ap-img" src="" alt="">
+      <div class="ap-info">
+        <div class="ap-name">Producto</div>
+        <div class="ap-price">€0,00</div>
+      </div>
+    </div>
+    <div class="add-panel-actions">
+      <a class="btn ap-view" href="carrito.html">Ver la cesta</a>
+      <button class="btn ap-keep" type="button">Seguir comprando</button>
+    </div>
+  </aside>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+  <script>
+    // Dropdown tienda
+    (function(){
+      const dd = document.getElementById('shopDropdown'); if(!dd) return;
+      const trigger = dd.querySelector('.drop-trigger'); const menu = dd.querySelector('.drop-menu');
+      const open = (v)=>{ menu.dataset.open = v ? '1' : '0'; trigger.setAttribute('aria-expanded', v?'true':'false'); };
+      trigger.addEventListener('click', e=>{ e.stopPropagation(); open(menu.dataset.open!=='1'); });
+      document.addEventListener('click', ()=>open(false));
+    })();
+
+    // ----- Panel de añadido (visual, no toca app.js) -----
+    let addPanelTimer=null;
+    function showAddPanel(item){
+      const panel = document.querySelector('.add-panel');
+      const back  = document.querySelector('.add-panel-backdrop');
+      if(!panel||!back) return;
+      panel.querySelector('.ap-img').src   = item.img || '';
+      panel.querySelector('.ap-img').alt   = item.name || 'Producto';
+      panel.querySelector('.ap-name').textContent  = item.name || 'Producto';
+      panel.querySelector('.ap-price').textContent = new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(item.price||0);
+      panel.dataset.show='1'; back.dataset.show='1'; back.hidden=false;
+      const close=()=>{ panel.dataset.show='0'; back.dataset.show='0'; clearTimeout(addPanelTimer); setTimeout(()=>{ back.hidden=true; },280); };
+      document.querySelector('.add-panel-close').onclick=close;
+      document.querySelector('.add-panel-backdrop').onclick=close;
+      document.querySelector('.add-panel .ap-keep').onclick=close;
+      clearTimeout(addPanelTimer); addPanelTimer=setTimeout(close,4000);
+    }
+
+    // Al clicar "Añadir al carrito", mostramos el panel con los datos de la tarjeta
+    document.addEventListener('click', (e)=>{
+      const btn=e.target.closest('.add'); if(!btn) return;
+      const card=btn.closest('.product'); if(!card) return;
+      const price=Number((card.dataset.price||'').toString().replace(/[^\d.,]/g,'').replace(',','.'));
+      const item={ name:card.dataset.name||'Producto', img:card.dataset.img||'', price:isNaN(price)?0:price };
+      // app.js ya añade al carrito y actualiza el contador. Aquí solo mostramos el panel.
+      showAddPanel(item);
+    });
+  </script>
+</body>
+</html>

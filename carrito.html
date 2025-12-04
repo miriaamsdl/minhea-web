@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tu carrito — MINHEA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Header fijo igual que en la home -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="minhea.html">MINHEA</a>
+      <nav class="main-nav">
+        <div class="dropdown"><button class="drop-trigger">Tienda ▾</button>
+          <div class="drop-menu"><a href="joyas.html">Joyas</a><a href="ropa.html">Ropa</a></div>
+        </div>
+
+        <a href="encargos.html">Encargos</a>
+        <a class="cart-btn" href="carrito.html">🛒 <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container cart-page">
+      <h1 class="title">Su cesta</h1>
+
+      <div class="cart-grid">
+        <!-- Columna izquierda: lista -->
+        <div class="cart-left">
+          <div class="cart-list"><!-- items aquí por JS --></div>
+
+          <!-- Opciones de regalo (estático) -->
+          <section class="gift-box">
+            <h3>Opciones de regalo</h3>
+            <label class="gift-line">
+              <input type="checkbox"> Añadir envoltorio de regalo
+              <span class="price-right">3,50 €</span>
+            </label>
+            <label class="gift-line">
+              <input type="checkbox"> Añadir tarjeta de regalo
+              <span class="price-right">Gratis</span>
+            </label>
+            <label class="gift-note">
+              Nota de regalo (opcional)
+              <textarea placeholder="Escribe tu dedicatoria..."></textarea>
+            </label>
+          </section>
+        </div>
+
+        <!-- Columna derecha: resumen -->
+        <aside class="cart-summary">
+          <div class="sum-row"><span>Subtotal</span><strong class="sum-sub">€0,00</strong></div>
+          <div class="sum-row"><span>Envío</span><strong class="sum-env">€0,00</strong></div>
+          <hr>
+          <div class="sum-row total"><span>Total</span><strong class="sum-tot">€0,00</strong></div>
+
+          <button class="btn btn-pay" type="button">Pagar</button>
+
+          <div class="pay-methods">
+            <span class="tag">VISA</span>
+            <span class="tag">MC</span>
+            <span class="tag">AmEx</span>
+            <span class="tag">PayPal</span>
+            <span class="tag">GPay</span>
+          </div>
+
+          <div class="promo">
+            <label for="cupon">Código promocional</label>
+            <div class="promo-row">
+              <input id="cupon" type="text" placeholder="Introduce tu código">
+              <button class="btn small" type="button" onclick="alert('Demo')">Aplicar</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <!-- Columna 1: Empresa "real" -->
+    <div>
+      <h4>Minhea</h4>
+      <ul>
+        <li><a href="sobre.html">Sobre Minhea</a></li>
+        <li><a href="proceso.html">Proceso de creación</a></li>
+        <li><a href="trabaja.html">Trabaja con nosotros</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 2: Plan de desarrollo de personas (todo el trabajo) -->
+    <div>
+      <h4>Plan de desarrollo de personas</h4>
+      <ul>
+        <li><a href="estructura.html">Estructura organizativa</a></li>
+        <li><a href="talento.html">Atracción del talento</a></li>
+        <li><a href="cultura-clima.html">Cultura y clima</a></li>
+        <li><a href="comunicacion.html">Comunicación interna</a></li>
+        <li><a href="formacion-desarrollo.html">Formación y desarrollo</a></li>
+        <li><a href="salud-bienestar.html">Salud y bienestar</a></li>
+        <li><a href="cuadro-mando.html">Cuadro de mando</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Documentos del trabajo -->
+    <div>
+      <h4>Documentación</h4>
+      <ul>
+        <li><a href="anexos.html">Anexos</a></li>
+        <li><a href="cuestionarios.html">Cuestionarios y escalas</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Legal (para que siga pareciendo web real) -->
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a>Términos y condiciones</a></li>
+        <li><a>Política de privacidad</a></li>
+        <li><a>Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2025 MINHEA · Proyecto de Psicología del Trabajo y las Organizaciones</p>
+  </div>
+</footer>
+
+  <script src="app.js"></script>
+  <script>
+    // activar dropdown por click (igual que en la home)
+    (function(){
+      const dd=document.querySelector('.dropdown'); if(!dd) return;
+      const t=dd.querySelector('.drop-trigger'); const m=dd.querySelector('.drop-menu');
+      const open=v=>{ m.dataset.open=v?'1':'0'; t.setAttribute('aria-expanded',v?'true':'false'); };
+      t.addEventListener('click',e=>{ e.stopPropagation(); open(m.dataset.open!=='1'); });
+      document.addEventListener('click',()=>open(false));
+    })();
+  </script>
+</body>
+</html>
